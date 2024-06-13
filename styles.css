@@ -1,0 +1,130 @@
+/* styles.css */
+body, html {
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #0f4ce4;
+}
+
+#navbar.active{
+    color: yellow;
+    background-color: black;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #6d22e7;
+    transition: background-color 0.3s, padding 0.3s;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; /* Center align the menu items */
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #0d0d0d;
+    color: rgb(255, 242, 3); /* Change font color to yellow on hover */
+}
+
+.scrolled {
+    background: color #222;;
+    padding: 5px 0; /* Reduce padding when scrolled */
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+section {
+
+    margin: 50px;
+    min-height: 100hv;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: double;
+    transform: translateY(20px);
+}
+
+section h1.active{
+    color: rgb(50, 25, 237);
+    background-color: black;
+}
+
+section h1 :hover {
+    background-color: #0e0e0e;
+    color: rgb(255, 242, 3); 
+}
+
+#home {
+    background-color: #a9c535;
+}
+
+#home:hover {
+     background-color: #cdff04;
+}
+
+
+#about  {
+    background-color: #5fc55f;
+    
+}
+
+#about:hover {
+    background-color: #0ad34d;
+}
+
+#services  {
+    background-color: #ef9f9f;
+   
+}
+
+#services:hover {
+    background-color: #e86161;
+}
+
+#contact {
+    background-color: #c686ce;
+   
+}
+
+#contact:hover {
+    background-color: #de14f9;
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
